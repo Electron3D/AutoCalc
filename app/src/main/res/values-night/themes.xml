@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AutoCalc" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/titleRed</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="colorAccent">@color/lightRed</item>
+        <!-- Customize your theme here. -->
+        <item name="actionBarTheme">@style/AppTheme.ActionBarTheme</item>
+    </style>
+    <style name="AppTheme.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/white</item> <!-- sets the color for the back arrow -->
+    </style>
+</resources>

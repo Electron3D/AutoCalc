@@ -1,0 +1,71 @@
+<resources>
+    <string name="start">Старт</string>
+    <string name="tire_size_calc">
+        Шинный\n
+        калькулятор</string>
+    <string name="auto_cost_calc_menu">Калькулятор\n стоимости авто</string>
+    <string name="auto_cost_calc">Калькулятор стоимости авто</string>
+    <string name="settings">Настройки</string>
+    <string name="input_data">Параметры к заполнению</string>
+    <string name="car_price">Цена авто (₽)</string>
+    <string name="time_of_ownership">Срок владения (лет)</string>
+    <string name="annual_mileage">Годовой пробег (км)</string>
+    <string name="lost_profit">Упущенная выгода (%)</string>
+    <string name="loss_of_value">Потеря стоимости (%)</string>
+    <string name="lost_profit2">Упущенная\nвыгода (%)</string>
+    <string name="loss_of_value2">Потеря\nстоимости (%)</string>
+    <string name="credit_yes_no">Кредит (да/нет)</string>
+    <string name="amount_of_credit">Сумма кредита (₽)</string>
+    <string name="credit_term_months">Срок кредита (месяцев)</string>
+    <string name="interest_rate">Ставка по кредиту (%)</string>
+    <string name="hull_insurance_yes_no">КАСКО (да/нет)</string>
+    <string name="vehicle_power_hp">Мощность (л.с.)</string>
+    <string name="working_days_on_the_paid_parking">Рабочих дней на пл. парковке</string>
+    <string name="parking_hour_price">Цена часа парковки (₽)</string>
+    <string name="parking_at_home_month">Парковка у дома (₽/месяц)</string>
+    <string name="office_parking_month">Парковка у офиса (₽/месяц)</string>
+    <string name="number_of_washes_per_month">Кол-во моек в месяц</string>
+    <string name="fuel_consumption_liters">Расход топлива (литров)</string>
+    <string name="fuel_price_per_liter">Цена литра топлива (₽)</string>
+    <string name="calculate">Рассчитать!</string>
+    <string name="result">Результат</string>
+    <string name="price_per_km">1 км пробега</string>
+    <string name="per_month">За месяц</string>
+    <string name="per_year">За год</string>
+    <string name="total">Всего</string>
+    <string name="fuel_cost_per_year">Топливо в год</string>
+    <string name="tax">Налог всего</string>
+    <string name="credit_overpayment">Переплата\nпо кредиту</string>
+    <string name="fuel_total">Топливо всего</string>
+    <string name="tax_per_year">Налог в год</string>
+    <string name="average_mtpl">Ср. ОСАГО (2020)</string>
+    <string name="mtpl_total">ОСАГО всего</string>
+    <string name="average_insurance">Ср. КАСКО (2020)</string>
+    <string name="insurance_total">КАСКО всего</string>
+    <string name="repair_amount_per_year">Cумма на ремонт в год (₽)</string>
+    <string name="about_app">О приложении</string>
+    <string name="about_developer">О разработчике</string>
+    <string name="version">
+        Версия 0.3\n\n
+        Данное приложение предназначено для расчета стоимости владения автомобилем.\n\n
+        Оно помогает адекватно оценить расходы на автомобиль, учитывая траты на содержание автомобиля.\n\n
+        Если вы не знаете как заполнить поле, то оставьте его пустым. Приложение произведет расчет без учета этого показателя.
+    </string>
+    <string name="developer_info">
+        Данное приложение является финальным проектом для курса обучения CS50.\n\n
+        Для разработчика это был первый личный опыт собственной разработки приложения.\n\n
+        Контактные данные для обратной связи, советов и предложений:\n
+        electron3djavadev@gmail.com\n
+    </string>
+    <string name="developer_info_2">
+        Если вам понравилось данное приложение, то вы можете поддержать разработчика следующим образом:\n
+        BTC - bc1qs2ecgf8qkatg0j2mqwyrwy5ceq2r5xnx55zua2
+    </string>
+    <string name="clear">Очистить</string>
+    <string name="lost_profit_help">
+        Упущенная выгода - это сумма процентов полученных со вклада в размере стоимости автомобиля за время владения им.\n\n
+        Необходимо указать актуальную процентную ставку по вкладам.
+    </string>
+    <string name="loss_of_value_help">Процент от стоимости автомобиля, который он теряет за год.</string>
+    <string name="help">Помощь</string>
+</resources>

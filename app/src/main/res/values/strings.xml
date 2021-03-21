@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name" translatable="false">AutoCalc</string>
+    <string name="start">Start</string>
+    <string name="autoсalc" translatable="false">AutoCalc</string>
+    <string name="tire_size_calc">Tire size calc</string>
+    <string name="auto_cost_calc_menu">Auto cost calc</string>
+    <string name="auto_cost_calc">Auto cost calc</string>
+    <string name="settings">Settings</string>
+    <string name="input_data">Input data</string>
+    <string name="car_price">Car price (₽)</string>
+    <string name="time_of_ownership">Time of ownership (years)</string>
+    <string name="annual_mileage">Annual mileage (km)</string>
+    <string name="lost_profit">Lost profit (%)</string>
+    <string name="loss_of_value">Loss of value (%)</string>
+    <string name="lost_profit2">Lost profit (%)</string>
+    <string name="loss_of_value2">Loss of value (%)</string>
+    <string name="credit_yes_no">Credit (yes/no)</string>
+    <string name="amount_of_credit">Amount of credit (₽)</string>
+    <string name="credit_term_months">Credit term (months)</string>
+    <string name="interest_rate">Interest rate (%)</string>
+    <string name="hull_insurance_yes_no">Hull insurance (yes/no)</string>
+    <string name="vehicle_power_hp">Vehicle power (hp)</string>
+    <string name="working_days_on_the_paid_parking">Working days on the paid parking</string>
+    <string name="parking_hour_price">Parking hour price (₽)</string>
+    <string name="parking_at_home_month">Parking at home (₽/month)</string>
+    <string name="office_parking_month">Office parking (₽/month)</string>
+    <string name="number_of_washes_per_month">Number of washes per month</string>
+    <string name="fuel_consumption_liters">Fuel consumption (liters)</string>
+    <string name="fuel_price_per_liter">Fuel price per liter (₽)</string>
+    <string name="repair_amount_per_year">Repair amount per year (₽)</string>
+    <string name="calculate">Calculate!</string>
+    <string name="result">Result</string>
+    <string name="price_per_km">Price per km</string>
+    <string name="per_month">Per month</string>
+    <string name="per_year">Per year</string>
+    <string name="total">Total</string>
+    <string name="fuel_cost_per_year">Fuel cost\nper year</string>
+    <string name="tax">Tax total</string>
+    <string name="average_mtpl">Average\nMTPL (2020)</string>
+    <string name="credit_overpayment">Credit\noverpayment</string>
+    <string name="fuel_total">Total fuel</string>
+    <string name="tax_per_year">Tax per year</string>
+    <string name="insurance_total">Total insurance</string>
+    <string name="average_insurance">Average\ninsurance (2020)</string>
+    <string name="mtpl_total">Total MTPL </string>
+    <string name="icon" translatable="false">icon</string>
+    <string name="about_app">About app</string>
+    <string name="about_developer">About developer</string>
+    <string name="version">
+        Version 0.3\n\n
+        This application is designed to calculate the cost of car ownership.\n\n
+        It helps to adequately estimate the cost of the car, taking into account the cost of maintaining the car.\n\n
+        If you do not know how to fill in the field, then leave it blank. The application will calculate without taking this indicator into account.
+    </string>
+    <string name="developer_info">
+        This app is the final project for the CS50 course.\n\n
+        For a developer, this was the first personal experience of his own application development.\n\n
+        Contact details for feedback, tips and suggestions:\n
+        electron3djavadev@gmail.com\n
+    </string>
+    <string name="developer_info_2">
+        If you liked this application, then you can support the developer as follows:\n
+        BTC - bc1qs2ecgf8qkatg0j2mqwyrwy5ceq2r5xnx55zua2
+    </string>
+    <string name="clear">Clear</string>
+    <string name="helpButton" translatable="false">helpButton</string>
+    <string name="lost_profit_help">
+        Lost profit is the amount of interest received from the contribution in the amount of the value of the car during the time of ownership.\n\n
+        You must indicate the current interest rate on deposits.
+    </string>
+    <string name="loss_of_value_help">The percentage of the value of the car that it loses over the year.</string>
+    <string name="help">Help</string>
+</resources>
