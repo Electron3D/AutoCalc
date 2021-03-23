@@ -47,7 +47,7 @@
     <string name="about_app">About app</string>
     <string name="about_developer">About developer</string>
     <string name="version">
-        Version 0.3\n\n
+        Version 0.4\n\n
         This application is designed to calculate the cost of car ownership.\n\n
         It helps to adequately estimate the cost of the car, taking into account the cost of maintaining the car.\n\n
         If you do not know how to fill in the field, then leave it blank. The application will calculate without taking this indicator into account.
