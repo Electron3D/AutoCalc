@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:gravity="center"
+    tools:ignore="SpUsage">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginHorizontal="70dp"
-        android:textSize="20sp"
+        android:textSize="20dp"
         android:text="@string/auto_cost_calc_menu"
         android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
         android:background="@drawable/btn_rounded_corner"
-        android:id="@+id/AutoCostCalcButton" />
+        android:id="@+id/AutoCostCalcButton"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:layout_marginHorizontal="70dp"
-        android:textSize="20sp"
+        android:textSize="20dp"
         android:text="@string/tire_size_calc"
         android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
         android:background="@drawable/btn_rounded_corner"
@@ -32,7 +34,7 @@
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:layout_marginHorizontal="70dp"
-        android:textSize="20sp"
+        android:textSize="20dp"
         android:text="@string/settings"
         android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
         android:background="@drawable/btn_rounded_corner"

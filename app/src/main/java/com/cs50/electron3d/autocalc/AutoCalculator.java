@@ -15,7 +15,7 @@ public class AutoCalculator {
     private int vehiclePower;
     private float fuelConsumption;
     private float fuelPrice;
-    private final int repair;
+    private int repair;
     public final int MTPL = 5398;
     public final int HULL_INSURANCE = 36500;
 
@@ -142,6 +142,42 @@ public class AutoCalculator {
         this.fuelPrice = fuelPrice;
     }
 
+    public void setLostProfit(float lostProfit) {
+        this.lostProfit = lostProfit;
+    }
+
+    public void setLossOfValue(float lossOfValue) {
+        this.lossOfValue = lossOfValue;
+    }
+
+    public void setInterestRate(float interestRate) {
+        this.interestRate = interestRate;
+    }
+
+    public void setFuelConsumption(float fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    public void setFuelPrice(float fuelPrice) {
+        this.fuelPrice = fuelPrice;
+    }
+
+    public int getRepair() {
+        return repair;
+    }
+
+    public void setRepair(int repair) {
+        this.repair = repair;
+    }
+
+    public int getMTPL() {
+        return MTPL;
+    }
+
+    public int getHULL_INSURANCE() {
+        return HULL_INSURANCE;
+    }
+
     public float fuelCostPerYear() {
         return fuelConsumption * annualMileage / 100 * fuelPrice;
     }
@@ -151,7 +187,7 @@ public class AutoCalculator {
     }
 
     public float taxPerYear() {
-        int rate = 0;
+        int rate;
         if (vehiclePower < 100) {
             rate = 12;
         } else if (vehiclePower < 125) {
@@ -201,7 +237,7 @@ public class AutoCalculator {
     }
 
     public float carCostTotal() {
-        float total = 0;
+        float total;
         if (isCredit) {
             if (isInsurance) {
                 total = (taxPerYear() + fuelCostPerYear() + MTPL + repair + HULL_INSURANCE) * timeOfOwnership + credit() + lossOfValueCalc() + lostProfitCalc();

@@ -4,46 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity"
+    tools:ignore="SpUsage">
 
     <ImageView
+        android:id="@+id/icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/icon"
-        app:layout_constraintBottom_toTopOf="@id/AppName"
+        android:contentDescription="@string/icon"
+        android:layout_marginTop="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/AppName"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:paddingTop="150dp"
-        android:contentDescription="@string/icon">
-    </ImageView>
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
+        android:id="@+id/AppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/autoсalc"
-        android:textSize="60sp"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:textColor="@color/red"
-        android:paddingTop="50dp"
+        android:textSize="60dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintBottom_toTopOf="@id/StartButton"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/AppName" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/StartButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/AppName"
+        android:layout_marginHorizontal="100dp"
+        android:background="@drawable/btn_rounded_corner"
+        android:text="@string/start"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginHorizontal="100sp"
-        android:text="@string/start"
-        android:textSize="30sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
-        android:background="@drawable/btn_rounded_corner"
-        android:id="@+id/StartButton" />
+        app:layout_constraintTop_toBottomOf="@id/AppName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

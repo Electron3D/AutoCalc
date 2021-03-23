@@ -10,39 +10,51 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AutoCalc"
         tools:ignore="AllowBackup">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MyMenuActivity" />
+        <activity
+            android:name=".MyMenuActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".AutoCostCalcActivity"
-            android:parentActivityName=".MyMenuActivity">
+            android:parentActivityName=".MyMenuActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MyMenuActivity" />
         </activity>
-        <activity android:name=".TireSizeCalcActivity" />
-        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name=".TireSizeCalcActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".AboutAppActivity"
             android:label="@string/about_app"
-            android:theme="@style/Theme.AppCompat.Dialog" />
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".AboutDeveloperActivity"
             android:label="@string/about_developer"
-            android:theme="@style/Theme.AppCompat.Dialog" />
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".LostProfitHelpActivity"
             android:label="@string/help"
-            android:theme="@style/Theme.AppCompat.Dialog" />
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".LossOfValueHelpActivity"
             android:label="@string/help"
-            android:theme="@style/Theme.AppCompat.Dialog" />
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
