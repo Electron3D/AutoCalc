@@ -19,12 +19,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="SpUsage">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -66,17 +64,17 @@
                 android:autofillHints="no"
                 android:inputType="number"
                 android:id="@+id/AnnualMileage"/>
-            <LinearLayout
+            <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="fill"
+                android:layout_marginTop="10dp"
                 android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="10dp">
+                android:columnCount="2"
+                android:rowCount="3">
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="fill"
                     android:hint="@string/lost_profit"
                     android:textSize="20dp"
                     android:autofillHints="no"
@@ -85,22 +83,14 @@
                 <Button
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_horizontal"
                     android:background="@drawable/help_icon"
                     android:contentDescription="@string/helpButton"
                     android:id="@+id/lostProfitHelpButton"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="fill"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="10dp">
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="fill"
                     android:hint="@string/loss_of_value"
                     android:textSize="20dp"
                     android:autofillHints="no"
@@ -109,33 +99,25 @@
                 <Button
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_horizontal"
                     android:background="@drawable/help_icon"
                     android:contentDescription="@string/helpButton"
                     android:id="@+id/lossOfValueHelpButton"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginHorizontal="30dp">
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill"
+                    android:layout_marginTop="10dp"
                     android:textSize="20dp"
                     android:autofillHints="no"
                     android:hint="@string/credit_yes_no"/>
                 <Spinner
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:textSize="20dp"
                     android:id="@+id/Credit"/>
-            </LinearLayout>
+            </GridLayout>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -248,7 +230,6 @@
                 android:id="@+id/CalculateButton"
                 android:layout_marginVertical="15dp"
                 android:layout_marginHorizontal="60dp"/>
-
             <TextView
                 android:id="@+id/ResultText"
                 android:layout_width="wrap_content"
@@ -673,7 +654,6 @@
                     android:visibility="gone"
                     tools:visibility="visible" />
             </LinearLayout>
-
             <Button
                 android:id="@+id/ClearButton"
                 android:layout_width="match_parent"
