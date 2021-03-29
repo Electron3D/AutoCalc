@@ -23,57 +23,59 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/input_data"
-                android:textSize="20dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="30dp"
-                android:textColor="@color/black" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="10dp"
-                android:hint="@string/car_price"
-                android:textSize="20dp"
-                android:autofillHints="no"
-                android:inputType="number"
-                android:id="@+id/CarPrice"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="10dp"
-                android:hint="@string/time_of_ownership"
-                android:textSize="20dp"
-                android:autofillHints="no"
-                android:inputType="number"
-                android:id="@+id/TimeOfOwnership"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="10dp"
-                android:hint="@string/annual_mileage"
-                android:textSize="20dp"
-                android:autofillHints="no"
-                android:inputType="number"
-                android:id="@+id/AnnualMileage"/>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginHorizontal="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/input_data"
+                    android:textSize="20dp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/black"
+                    android:id="@+id/inputData"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/inputData"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/car_price"
+                    android:textSize="20dp"
+                    android:autofillHints="no"
+                    android:inputType="number"
+                    android:id="@+id/CarPrice"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/CarPrice"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:hint="@string/time_of_ownership"
+                    android:textSize="20dp"
+                    android:autofillHints="no"
+                    android:inputType="number"
+                    android:id="@+id/TimeOfOwnership"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TimeOfOwnership"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:hint="@string/annual_mileage"
+                    android:textSize="20dp"
+                    android:autofillHints="no"
+                    android:inputType="number"
+                    android:id="@+id/AnnualMileage"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_toStartOf="@id/lossOfValueHelpButton"
+                    android:layout_below="@id/AnnualMileage"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:hint="@string/lost_profit"
                     android:textSize="20dp"
@@ -94,6 +96,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_toStartOf="@id/lossOfValueHelpButton"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_below="@id/LostProfit"
                     android:hint="@string/loss_of_value"
@@ -129,56 +132,58 @@
                     android:layout_marginEnd="10dp"
                     android:textSize="20dp"
                     android:id="@+id/Credit"/>
-            </RelativeLayout>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginEnd="40dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="10dp"
-                android:hint="@string/amount_of_credit"
-                android:textSize="20dp"
-                android:autofillHints="no"
-                android:inputType="number"
-                android:id="@+id/AmountOfCredit"
-                android:visibility="gone"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginEnd="40dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="10dp"
-                android:hint="@string/credit_term_months"
-                android:textSize="20dp"
-                android:autofillHints="no"
-                android:inputType="number"
-                android:id="@+id/CreditTerm"
-                android:visibility="gone"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginEnd="40dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="10dp"
-                android:hint="@string/interest_rate"
-                android:textSize="20dp"
-                android:autofillHints="no"
-                android:inputType="numberDecimal"
-                android:id="@+id/InterestRate"
-                android:visibility="gone"/>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginHorizontal="30dp">
+
+                <EditText
+                    android:id="@+id/AmountOfCredit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Credit"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="no"
+                    android:hint="@string/amount_of_credit"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/CreditTerm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/AmountOfCredit"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="no"
+                    android:hint="@string/credit_term_months"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/InterestRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/CreditTerm"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="no"
+                    android:hint="@string/interest_rate"
+                    android:inputType="numberDecimal"
+                    android:textSize="20dp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_below="@id/InterestRate"
                     android:layout_alignParentStart="true"
                     android:layout_toStartOf="@id/checkBox"
+                    android:layout_marginTop="10dp"
                     android:layout_marginStart="3dp"
                     android:textSize="20dp"
                     android:autofillHints="no"
@@ -187,56 +192,56 @@
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@id/hull_insurance"
                     android:layout_alignParentEnd="true"
                     android:layout_alignBottom="@id/hull_insurance"
                     android:layout_marginEnd="15dp"
                     android:id="@+id/checkBox"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hull_insurance"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:hint="@string/vehicle_power_hp"
+                    android:textSize="20dp"
+                    android:autofillHints="no"
+                    android:inputType="number"
+                    android:id="@+id/VehiclePower"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/VehiclePower"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:hint="@string/fuel_consumption_liters"
+                    android:textSize="20dp"
+                    android:autofillHints="no"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/FuelConsumption"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/FuelConsumption"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:hint="@string/fuel_price_per_liter"
+                    android:textSize="20dp"
+                    android:autofillHints="no"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/FuelPrice"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/FuelPrice"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:hint="@string/repair_amount_per_year"
+                    android:textSize="20dp"
+                    android:autofillHints="no"
+                    android:inputType="number"
+                    android:id="@+id/repair"/>
             </RelativeLayout>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="10dp"
-                android:hint="@string/vehicle_power_hp"
-                android:textSize="20dp"
-                android:autofillHints="no"
-                android:inputType="number"
-                android:id="@+id/VehiclePower"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="10dp"
-                android:hint="@string/fuel_consumption_liters"
-                android:textSize="20dp"
-                android:autofillHints="no"
-                android:inputType="numberDecimal"
-                android:id="@+id/FuelConsumption"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="10dp"
-                android:hint="@string/fuel_price_per_liter"
-                android:textSize="20dp"
-                android:autofillHints="no"
-                android:inputType="numberDecimal"
-                android:id="@+id/FuelPrice"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="10dp"
-                android:hint="@string/repair_amount_per_year"
-                android:textSize="20dp"
-                android:autofillHints="no"
-                android:inputType="number"
-                android:id="@+id/repair"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
