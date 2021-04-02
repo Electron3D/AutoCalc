@@ -1,5 +1,5 @@
 # AutoCalc
-## Video Demo:  <URL HERE>
+## Video Demo:  <https://youtu.be/48A3oEzclbw>
 ## Description:
 My first android app is called "AutoCalc". It's auto's cost calculator.
 My app is useful for people who want to know how much money they already spend or will spend for their car.
